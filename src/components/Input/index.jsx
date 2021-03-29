@@ -9,7 +9,8 @@ import { useField } from '@unform/core';
 
 import { Container } from './styles';
 
-const Input = ({ name, icon: Icon, ...rest }) => {
+const Input = (props) => {
+  const { name, icon: Icon, ...rest } = props
   const inputRef = useRef(null);
 
   const [isFocused, setIsFocused] = useState(false);
