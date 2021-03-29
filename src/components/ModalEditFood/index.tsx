@@ -1,4 +1,3 @@
-import { Component, createRef } from 'react';
 import { FiCheckSquare } from 'react-icons/fi';
 
 import { Form } from './styles';
@@ -12,10 +11,12 @@ interface IModalEditFoodProps {
   handleUpdateFood: (data: IFoodRequest)=>void
 }
 interface IFoodRequest {
+  id: number,
   image: string
   name: string
   price: string
-  description: string
+  description: string,
+  available: boolean
 }
 function ModalEditFood(props: IModalEditFoodProps) {
   const { isOpen, setIsOpen, editingFood } = props;
