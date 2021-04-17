@@ -20,7 +20,7 @@ function Header(props: IHeaderProps){
               type="button"
               onClick={openModal}
             >
-              <div className="text">Novo Prato</div>
+              <div className="text">Nova T-shirt</div>
               <div className="icon">
                 <FiPlusSquare size={24} />
               </div>
