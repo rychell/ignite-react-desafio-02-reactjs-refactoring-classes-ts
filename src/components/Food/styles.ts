@@ -6,11 +6,11 @@ interface ContainerProps {
 export const Container = styled.div<ContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
-
+  width: 100%;
   header {
     background: #ffb84d;
     border-radius: 8px 8px 0px 0px;
-    height: 192px;
+    height: auto;
     overflow: hidden;
     transition: 0.3s opacity;
     text-align: center;
@@ -24,6 +24,7 @@ export const Container = styled.div<ContainerProps>`
     img {
       pointer-events: none;
       user-select: none;
+      width:100%;
     }
   }
 
@@ -53,7 +54,7 @@ export const Container = styled.div<ContainerProps>`
   }
 
   section.footer {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 
